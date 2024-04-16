@@ -35,6 +35,6 @@ class GroupHelper:
         root.children()[index].click()
         self.group_editor.window(auto_id="uxDeleteAddressButton").click()
         self.delete_group_form = self.app.application.window(title="Delete group")
-        # self.delete_group_form.wait("visible")
+        self.delete_group_form.wait("visible")
         self.delete_group_form.window(auto_id="uxOKAddressButton").click()
         self.group_editor.close()
